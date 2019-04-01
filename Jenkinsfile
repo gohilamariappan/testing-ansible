@@ -1,6 +1,6 @@
 #!groovy
 
-node('server_build_slave')
+node('master')
 {
 stage('Deploy')
 
