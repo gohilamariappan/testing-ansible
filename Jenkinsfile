@@ -9,7 +9,7 @@ stage('Deploy')
        def env = "${env.JOB_BASE_NAME}".split("-").last()
                 
              sh """ 
-             environment = $env
+             environment = ${env}
              echo $environment
                 """
               
