@@ -10,7 +10,7 @@ stage('Deploy')
                 
              sh """ 
              environment = ${env}
-             echo $environment
+             echo ${environment}
                 """
               
                 
