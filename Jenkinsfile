@@ -8,7 +8,9 @@ stage('Deploy')
      checkout scm
        def env = "${env.JOB_BASE_NAME}".split("-").last()
                 
-             sh """   echo $env
+             sh """ 
+             environment = $env
+             echo $environment
                 """
               
                 
