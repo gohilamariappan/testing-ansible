@@ -9,7 +9,7 @@ stage('Deploy')
 
               sh '''
 		environment = $(echo $JOB_BASE_NAME | cut -d "-" -f 1)
-		echo "$environment"
+		echo $environment
 		'''
 
               
